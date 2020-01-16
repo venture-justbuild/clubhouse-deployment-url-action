@@ -9,13 +9,13 @@
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
-    "pack": "ncc build",
+    "pack": "ncc build -o dist/index.js",
     "test": "jest",
     "build:all": "yarn build && yarn format && yarn lint && yarn pack && yarn test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn build && git add dist"
+      "pre-commit": "yarn build && yarn pack"
     }
   },
   "repository": {

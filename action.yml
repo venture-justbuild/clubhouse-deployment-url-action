@@ -3,4 +3,4 @@ description: 'Updates Clubhouse story description with URLs of Pull Request depl
 author: 'JustBuild engineering team'
 runs:
   using: 'node12'
-  main: 'dist/main.js'
+  main: 'dist/index.js'
